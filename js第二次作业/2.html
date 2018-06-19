@@ -1,0 +1,18 @@
+<html>
+<head>
+<title>web</title>
+</head>
+<body>
+/*2018.4.23*/
+<a href="http://www.taobao.com">taobao</a>
+<a href="javascript:popup('http://www.taobao.com/');">taobao1</a>
+<a href="#"onclick="popup('http://www.taobao.com/');return false;">taobao2</a>
+</body>
+<script>
+function popup(winURL){
+window.open(winURL,"popup","width=300,height=300");
+}
+document.getElementsByTagName("a")[0].onclick=function()
+{popup(this.href);return false;};
+</script>
+</html>
